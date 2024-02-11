@@ -1,8 +1,7 @@
-// ignore_for_file: avoid_print
-
 import 'package:flutter/services.dart';
-import 'package:voting_app/utils/constants.dart';
 import 'package:web3dart/web3dart.dart';
+
+import 'package:voting_app/utils/constants.dart';
 
 Future<DeployedContract> loadContract() async {
   String abi = await rootBundle.loadString('assets/abi.json');
